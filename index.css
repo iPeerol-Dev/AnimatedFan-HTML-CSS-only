@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 300px;
+    height: 580px;
+    background-color: lightblue;
+    position: relative;
+    left: 700px;
+    top: 150px;
+    border-radius: 20px;
+}
+
+.fan-head{
+    border-radius: 50%;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+
+.fan-blade{
+    background-color: black;
+    width: 18px;
+    height: 175px;
+    position: absolute;
+    border-radius: 5px;
+    left: 140px;
+    top: 28px;
+    animation: rolling 0.4s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rolling{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.fan-stand-one{
+    background-color: grey;
+    width: 20px;
+    height: 150px;
+    position: absolute;
+    left: 140px;
+    top: 215px;
+}
+
+.fan-stand-two{
+    background-color: blue;
+    width: 40px;
+    height: 110px;
+    position: absolute;
+    left: 130px;
+    top: 370px;
+    border-radius: 5px;
+}
+
+.control-box{
+    background-color: black;
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    left: 80px;
+    top: 490px;
+    border-radius: 5px;
+}
+
+.switch{
+    position: absolute;
+    left: 140px;
+    top: 510px;
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+    left: 125px;
+    text-align: center;
+    font-weight: 900;
+}
